@@ -3,7 +3,7 @@ export default class FiveSportService {
     this.$http = $http
   }
   getLogins() {
-    return this.$http.get('https://rawgit.com/thiagolucio/FiveSports/master/users.json')
+    return this.$http.get('https://rawgit.com/thiagolucio/FiveSportsAngular/master/users.json')
   }
 
 }
