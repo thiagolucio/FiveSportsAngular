@@ -1,18 +1,6 @@
 <div class="container">
   <ul>
-  <li ng-repeat="login in $ctrl.logins">{{login.uss_codigo}}</li>
-  <li ng-repeat="login in $ctrl.logins">{{login.uss_nome}}</li>
-  <li ng-repeat="login in $ctrl.logins">{{login.uss_cpf}}</li>
-  <li ng-repeat="login in $ctrl.logins">{{login.uss_sexo}}</li>
-  <li ng-repeat="login in $ctrl.logins">{{login.uss_fone}}</li>
-  <li ng-repeat="login in $ctrl.logins">{{login.uss_logradouro}}</li>
-  <li ng-repeat="login in $ctrl.logins">{{login.Bairro}}</li>
-  <li ng-repeat="login in $ctrl.logins">{{login.uss_numero}}</li>
-  <li ng-repeat="login in $ctrl.logins">{{login.cid_codigo}}</li>
-  <li ng-repeat="login in $ctrl.logins">{{login.uss_data_cadastro}}</li>
-  <li ng-repeat="login in $ctrl.logins">{{login.uss_data_nascimento}}</li>
-  <li ng-repeat="login in $ctrl.logins">{{login.uss_senha}}</li>
-  <li ng-repeat="login in $ctrl.logins">{{login.uss_senha}}</li>
+  <li ng-repeat="(key, login) in $ctrl.logins">{{login[key]}}</li>
 </ul>
 </div>
 
